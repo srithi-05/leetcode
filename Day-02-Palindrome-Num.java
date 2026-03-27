@@ -3,6 +3,7 @@
 // Input: x = 121
 // Output: true
 // Explanation: 121 reads as 121 from left to right and from right to left.
+//Brute Force : O(n)
 class Solution {
     public boolean isPalindrome(int x) {
         String s=String.valueOf(x);
@@ -19,8 +20,7 @@ class Solution {
         
     }
 }
-//Optimal
-//time complexity: O(1)
+//Optimal : O(1)
 class Solution {
     public boolean isPalindrome(int x) {
         // negative or ending with 0 (but not 0 itself)
@@ -36,3 +36,4 @@ class Solution {
         return (x == reversedHalf || x == reversedHalf / 10);
     }
 }
+//Time complexity : O(n) -> O(1)
